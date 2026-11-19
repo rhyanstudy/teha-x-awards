@@ -1,0 +1,10 @@
+node_modules/
+data/store.json
+data/media/*
+!data/media/.gitkeep
+data/*.tmp
+data/*.corrupt-*
+.env
+public/audio/*
+!public/audio/horn-of-plenty.mp3
+!public/audio/coloque-o-instrumental-aqui.txt

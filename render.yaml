@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: teha-x-awards
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: "npm install --omit=dev"
+    startCommand: "node server.js"
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: TEHAX_ADMIN_PASSWORD
+        sync: false
